@@ -18,6 +18,10 @@ li {
     list-style-type: none;
     /* Прибираємо маркеры у списках */
 }
+/* ---------------HEADER------------------ */
+.header {
+    background-color: var(--white-color);
+}
 /* ---------------LOGO------------------ */
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -32,16 +36,50 @@ li {
 .logo-right-part {
     color: #000000;
 }
-/* -------------------NAV --------------------- */
-.nav a {
-    font-style: normal;
+/* -------------------SITE NAV --------------------- */
+.site-nav a {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: var(--title-text-color);  
     }
-.nav a:hover,
-.nav a:focus {
+.site-nav a:hover,
+.site-nav a:focus {
     color: var(--accent-blue-color);
+}
+/* -----------------CONTACTS------------------- */
+.contacts a {
+    Font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    color: var(--content-text-color);
+}
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-blue-color);}
+/* ----------------EFFECTIVE------------------- */
+.effective {
+    background-color:  #2F303A;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.order-button {
+    color: var(--white-color);
+    background-color: var(--accent-blue-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
+    cursor: pointer;   
+}
+.order-button:hover,
+.order-button:focus {
+    background-color: #188ce8;
 }
