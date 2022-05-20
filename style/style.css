@@ -1,0 +1,13 @@
+:root {
+    --title-text-color: #212121;
+    --content-text-color: #757575;
+    --links-text-color: #FFFFFF99;
+    --accent-blue-color: #2196F3;
+    --white-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: Roboto, sans-serif;
+
+}
