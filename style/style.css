@@ -159,6 +159,10 @@ li {
 .logo-right-part-footer {
     color: var(--white-color);
 }
+address {
+    font-style: normal;
+}
+/* Виправив шрифт посилань на нормальний */
 .office-adress {
         font-weight: 400;
         font-size: 14px;
