@@ -114,7 +114,7 @@ li {
         line-height: calc(42/36);
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--title-text-color)
+        color: var(--title-text-color);
 }
 /* ---------------OUR TEAM------------- */
 .section-team {
@@ -168,7 +168,7 @@ address {
         font-size: 14px;
         line-height: calc(24/14);
         letter-spacing: 0.03em; 
-        color: var(--white-color)
+        color: var(--white-color);
 }
 .office-adress a:hover,
 .office-adress a:focus {
@@ -195,14 +195,45 @@ address {
 .tel a:hover,
 .tel a:focus {
     color: var(--accent-blue-color);
+}
+    
 
 /* ----------------PORTFOLIO (second page html)------------- */
 
 .page {
-
+}
+/* --------------------PROGECTS BUTTONS------------- */
+.button-filter {
+    color:var(--title-text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    font-family: inherit;
 }
 .button-filter:hover,
 .button-filter:focus {
-    background-color:red;
-    color: var(--accent-blue-color);
+    background-color:var(--accent-blue-color);
+    color: var(--white-color);
+    }
+    /* -----------PROGECTS PRESENTATION------------ */
+.progect-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
 }
+.progect-list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+    color:var(--content-text-color);
+}
+
+
+
+    
