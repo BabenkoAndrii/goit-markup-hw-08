@@ -107,4 +107,38 @@ li {
     letter-spacing: 0.03em;
     color: var(--content-text-color);
 }
-
+/* --------------ACTIVITY-------------- */
+.activity-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42/36);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color)
+}
+/* ---------------OUR TEAM------------- */
+.section-team {
+    background-color: #F5F4FA;
+}
+.team {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: calc(42/36);
+        text-align: center;
+        letter-spacing: 0.03em;    
+        color:var(--title-text-color);
+}
+.team-members {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: calc(19/16);
+        letter-spacing: 0.03em;    
+        color:var(--title-text-color)
+}
+.team-members-position {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(19/16);
+        letter-spacing: 0.03em;    
+        color: var(--content-text-color);
+}
