@@ -142,3 +142,52 @@ li {
         letter-spacing: 0.03em;    
         color: var(--content-text-color);
 }
+/* --------------FOOTER------------- */
+.footer {
+    background-color:#2F303A;
+}
+.logo-footer {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31/26);
+        letter-spacing: 0.03em;
+        color: var(--accent-blue-color);
+        text-decoration: none;
+}
+.logo-right-part-footer {
+    color: var(--white-color);
+}
+.office-adress {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em; 
+        color: var(--white-color)
+}
+.office-adress a:hover,
+.office-adress a:focus {
+    color: var(--accent-blue-color);
+}
+.email {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.email a:hover,
+.email a:focus {
+    color: var(--accent-blue-color);
+}
+.tel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);   
+}
+.tel a:hover,
+.tel a:focus {
+    color: var(--accent-blue-color);
