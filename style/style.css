@@ -197,3 +197,12 @@ address {
     color: var(--accent-blue-color);
 
 /* ----------------PORTFOLIO (second page html)------------- */
+
+.page {
+
+}
+.button-filter a:hover,
+.button-filter a:focus {
+    background-color:#757575;
+    color: var(--accent-blue-color);
+}
