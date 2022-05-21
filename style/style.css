@@ -18,10 +18,7 @@ li {
     list-style-type: none;
     /* Прибираємо маркери у списках */
 }
-/* ---------------HEADER---------------- */
-.header {
 
-}
 /* ---------------LOGO------------------ */
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -48,9 +45,7 @@ li {
 .site-nav a:focus {
     color: var(--accent-blue-color);
 }
-.site-nav-studio {}
-.site-nav-portfolio {}
-.site-nav-contacts {}
+
 /* -----------------CONTACTS------------------- */
 .contacts a {
     Font-weight: 500;
@@ -63,8 +58,6 @@ li {
 .contacts a:focus {
     color: var(--accent-blue-color);}
 
-.contacts-mail {}
-.contacts-tel {}
 /* ----------------EFFECTIVE------------------- */
 .effective {
     background-color:  #2F303A;
