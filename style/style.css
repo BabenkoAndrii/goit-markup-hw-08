@@ -201,8 +201,8 @@ address {
 .page {
 
 }
-.button-filter a:hover,
-.button-filter a:focus {
+.button-filter :hover,
+.button-filter :focus {
     background-color:#757575;
     color: var(--accent-blue-color);
 }
