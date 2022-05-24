@@ -18,7 +18,11 @@ li {
     list-style-type: none;
     /* Прибираємо маркери у списках */
 }
-
+/* ---------------HEADER----------------- */
+.page-header {
+    display: flex;
+    align-items: center;
+}
 /* ---------------LOGO------------------ */
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -34,11 +38,17 @@ li {
 }
 /* -------------------SITE NAV --------------------- */
 .site-nav a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--title-text-color);  
+     
     }
 .site-nav a:hover,
 .site-nav a:focus   {
@@ -48,18 +58,34 @@ li {
 color:var(--accent-blue-color) ;
 }
 /* так виглядає CURRENT (виділення назви поточної сторінки) */
+.site-nav {
+    margin-left: 93px;
+    display: flex;
+    }
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+    }
 
 /* -----------------CONTACTS------------------- */
 .contacts a {
+    color: var(--content-text-color);
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--content-text-color);
+    
 }
 .contacts a:hover,
 .contacts a:focus {
     color: var(--accent-blue-color);}
+.contacts {
+    margin-left: 331px;
+    display: flex;
+}
+.contacts .item + .item {
+    margin-left: 50px;
+}
 
 /* ----------------EFFECTIVE------------------- */
 .effective {
