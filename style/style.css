@@ -68,6 +68,8 @@ color:var(--accent-blue-color) ;
 /* так виглядає CURRENT (виділення назви поточної сторінки) */
 .site-nav {
     padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
     margin-left: 93px;
     display: flex;
     }
