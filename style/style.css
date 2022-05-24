@@ -103,6 +103,9 @@ color:var(--accent-blue-color) ;
 
 /* ----------------EFFECTIVE------------------- */
 .effective {
+    padding: 200px 452px 280px 452px;
+    margin: 0;
+
     background-color:  #2F303A;
     font-weight: 900;
     font-size: 44px;
@@ -119,6 +122,7 @@ color:var(--accent-blue-color) ;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    
     cursor: pointer;   
     font-family: inherit;
     /* підтягуємо до кнопки стиль з шапки */
