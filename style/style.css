@@ -118,11 +118,11 @@ li {
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 94px;
     background-color: #2F303A;
 }
 
-.effective { 
-        
+.effective {         
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -143,8 +143,7 @@ li {
     line-height: 1.88;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    border-color: #000000;
-    border-width: 1px;
+    border: 1px solid 000000;
     cursor: pointer;   
     font-family: inherit;
     /* підтягуємо до кнопки стиль з шапки */
@@ -161,13 +160,11 @@ li {
 .principles {
     display: flex;
 }
-.principles.container {
-    margin-top: 94px;
-    margin-bottom: 94px;
-}
+
 .principle {
     width: 270px;
     height: 100px;
+    margin-bottom: 94px;
 }
 .principle:not(:last-child) {
     margin-right: 30px;
@@ -189,7 +186,12 @@ li {
     color: var(--content-text-color);
 }
 /* --------------ACTIVITY-------------- */
-.activity-title {
+
+.activity {
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -197,6 +199,19 @@ li {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
+
+.activity-title {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 94px;
+    margin-bottom: 188px;
+}
+
+.activity-title .activity-photo:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* ---------------OUR TEAM------------- */
 .section-team {
     background-color: #F5F4FA;
