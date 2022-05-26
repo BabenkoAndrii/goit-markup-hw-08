@@ -145,7 +145,6 @@ li {
     border-radius: 4px;
     border-color: #000000;
     border-width: 1px;
-    
     cursor: pointer;   
     font-family: inherit;
     /* підтягуємо до кнопки стиль з шапки */
@@ -160,10 +159,22 @@ li {
     /* робимо текст невидимим */
 }
 .principles {
-display: flex;
+    display: flex;
 }
+.principles.container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.principle {
+    width: 270px;
+    height: 100px;
+}
+.principle:not(:last-child) {
+    margin-right: 30px;
+    }
+
 .principles-title {
-    
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
