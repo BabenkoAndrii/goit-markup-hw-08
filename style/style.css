@@ -215,31 +215,31 @@ li {
     background-color: #F5F4FA;
 }
 .team {
-        margin-bottom: 50px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;    
-        color:var(--title-text-color);
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;    
+    color:var(--title-text-color);
 }
 .team-members {
-        font-weight: 500;
-        font-size: 16px;
-        text-align: center;
-        line-height: 1.19;
-        letter-spacing: 0.03em;    
-        color:var(--title-text-color);
-        margin-top: 30px;
-        margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.19;
+    letter-spacing: 0.03em;    
+    color:var(--title-text-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .team-members-position {
-        text-align: center;
-        line-height: 1.19;
-        letter-spacing: 0.03em;    
-        color: var(--content-text-color);
-        margin-bottom: 30px ;
-        }
+    text-align: center;
+    line-height: 1.19;
+    letter-spacing: 0.03em;    
+    color: var(--content-text-color);
+    margin-bottom: 30p ;
+    }
 .members-title {
     display: flex;
 }
@@ -254,16 +254,20 @@ li {
 /* --------------FOOTER------------- */
 .footer {
     background-color:#2F303A;
+    height: 252px;
 }
 .logo-footer {
-        font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: var(--accent-blue-color);
-        text-decoration: none;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-blue-color);
+    text-decoration: none;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 .logo-right-part-footer {
     color: var(--white-color);
@@ -301,6 +305,9 @@ address {
 .tel:hover,
 .tel:focus {
     color: var(--accent-blue-color);
+}
+.contact:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /* ----------------PORTFOLIO (second page html)------------- */
