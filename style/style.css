@@ -63,7 +63,7 @@ li {
     color: var(--accent-blue-color);
 }
 .site-nav .link-page.current {
-color:var(--accent-blue-color) ;
+    color: var(--accent-blue-color);
 }
 /* так виглядає CURRENT (виділення назви поточної сторінки) */
 .site-nav {
@@ -93,7 +93,7 @@ color:var(--accent-blue-color) ;
     color: var(--accent-blue-color);}
 .contacts {
     padding-inline-start: 0;
-    margin-left: 331px;
+    margin-left: auto;
     display: flex;
     
 }
