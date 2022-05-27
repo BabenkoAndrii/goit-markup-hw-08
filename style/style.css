@@ -39,7 +39,7 @@ li {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     width: 1200px;
 }
 /* ---------------HEADER----------------- */
@@ -70,7 +70,7 @@ li {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-         }
+    }
 .site-nav a:hover,
 .site-nav a:focus   {
     color: var(--accent-blue-color);
@@ -90,13 +90,11 @@ li {
 /* -----------------CONTACTS------------------- */
 .contacts a {
     color: var(--content-text-color);
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
-}
+    }
 .contacts a:hover,
 .contacts a:focus {
     color: var(--accent-blue-color);}
@@ -311,7 +309,6 @@ address {
 
 /* ----------------PORTFOLIO (second page html)------------- */
 
-
 /* ----------------PROGECTS BUTTONS------------- */
 
 .button-filter {
@@ -342,9 +339,6 @@ address {
     margin-right: 8px;
    }
 
-.progects-filter: {
-
-}
     /* -----------PROGECTS PRESENTATION------------ */
 .progect-title {
     font-weight: 700;
@@ -352,9 +346,40 @@ address {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+    margin-bottom: 4px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 .progect-list {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color:var(--content-text-color);
-}   
+    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+}  
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 94px;
+} 
+.card {
+    width: ((100%-60px) / 3);
+    /* Формула для АВТОвирахування 
+    рівномірного простору
+    для карток */
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+/* Формула для вирахування 
+рівномірного зазору між картками */
+.card:nth-child(3n) {
+    margin-right: 0;
+}
+/* Формула: кожному третьому
+чайлду правий маржин 0 */
+
+.img {
+    display: block;
+    margin-bottom: 20px;
+}
