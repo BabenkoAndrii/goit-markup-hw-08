@@ -60,6 +60,9 @@ li {
 .logo-right-part {
     color: #000000;
 }
+.headers-bottom-border {
+    border: 1px solid #ECECEC;
+}
 /* -------------------SITE NAV --------------------- */
 .site-nav a {
     display: flex;
