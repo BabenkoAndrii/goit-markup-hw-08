@@ -42,14 +42,20 @@ li {
     /* outline: 2px solid tomato; */
     width: 1200px;
 }
+section {
+    padding-bottom: 94px;
+}
 /* ---------------HEADER----------------- */
 .page-header {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
+
 /* ---------------LOGO------------------ */
 .logo {
     font-family: 'Raleway', sans-serif;
+    margin-right: 93px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -60,12 +66,10 @@ li {
 .logo-right-part {
     color: #000000;
 }
-.headers-bottom-border {
-    border: 1px solid #ECECEC;
-}
+
 /* -------------------SITE NAV --------------------- */
 .site-nav a {
-    display: flex;
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--title-text-color);
@@ -83,7 +87,6 @@ li {
 }
 /* так виглядає CURRENT (виділення назви поточної сторінки) */
 .site-nav {
-    margin-left: 93px;
     display: flex;
     }
 .site-nav .item:not(:last-child) {
@@ -92,6 +95,9 @@ li {
 
 /* -----------------CONTACTS------------------- */
 .contacts a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--content-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -112,12 +118,10 @@ li {
 /* ----------------EFFECTIVE------------------- */
 .effect {
     max-width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 94px;
     background-color: #2F303A;
 }
 
@@ -132,6 +136,7 @@ li {
 }
 .order-button {
     display: block;
+    padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -153,19 +158,29 @@ li {
 }
 /* -----------------PRINCIPLES ---------------- */
 .principles-hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
     /* робимо текст невидимим */
 
 .principles {
     display: flex;
+    padding-top: 94px;
 }
 
 .principle {
     width: 270px;
-    height: 100px;
-    margin-bottom: 94px;
-}
+    
+    }
 .principle:not(:last-child) {
     margin-right: 30px;
     }
@@ -203,8 +218,7 @@ li {
 .activity-title {
     display: flex;
     padding-bottom: 94px;
-    margin-bottom: 188px;
-}
+    }
 
 .activity-title .activity-photo:not(:last-child) {
     margin-right: 30px;
@@ -230,7 +244,6 @@ li {
     line-height: 1.19;
     letter-spacing: 0.03em;    
     color:var(--title-text-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .team-members-position {
@@ -238,23 +251,26 @@ li {
     line-height: 1.19;
     letter-spacing: 0.03em;    
     color: var(--content-text-color);
-    margin-bottom: 30p ;
     }
+.team-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .members-title {
     display: flex;
 }
 
 .member {
     width: 270px;
-    height: 368px;
-}
+    }
 .members-title .member:not(:last-child) {
     margin-right: 30px;
 }
 /* --------------FOOTER------------- */
 .footer {
     background-color:#2F303A;
-    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .logo-footer {
     display: block;
@@ -266,8 +282,7 @@ li {
     letter-spacing: 0.03em;
     color: var(--accent-blue-color);
     text-decoration: none;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .logo-right-part-footer {
     color: var(--white-color);
@@ -313,7 +328,22 @@ address {
 /* ----------------PORTFOLIO (second page html)------------- */
 
 /* ----------------PROGECTS BUTTONS------------- */
-
+.progects {
+    padding-top: 94px;
+}
+.progects-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .button-filter {
     font-weight: 500;
     font-size: 16px;
@@ -326,8 +356,7 @@ address {
     border-radius: 4px;
     border:var(--white-color);
     padding: 6px 22px;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -341,6 +370,9 @@ address {
 .progects-buttons .progects-filter:not(:last-child) {
     margin-right: 8px;
    }
+.progects-filter {
+    margin-bottom: 50px;
+}
 
     /* -----------PROGECTS PRESENTATION------------ */
 .progect-title {
@@ -349,22 +381,16 @@ address {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    margin-bottom: 4px;
-    margin-left: 24px;
-    margin-right: 24px;
-}
+   }
 .progect-list {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color:var(--content-text-color);
-    margin-bottom: 20px;
-    margin-left: 24px;
-    margin-right: 24px;
-}  
+    }  
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 94px;
+    
 } 
 .card {
     width: ((100%-60px) / 3);
@@ -381,8 +407,17 @@ address {
 }
 /* Формула: кожному третьому
 чайлду правий маржин 0 */
-
+.card:nth-child(n + 6) {
+    margin-bottom: 0;
+}
+/* прибрали всім елементам після шостого MB */
+.three-sides-border {
+    border-right: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    /* рамка з трьох сторін */
+    padding: 20px 24px;
+}
 .img {
     display: block;
-    margin-bottom: 20px;
-}
+    }
