@@ -43,12 +43,15 @@ li {
     width: 1200px;
 }
 section {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 /* ---------------HEADER----------------- */
 .page-header {
     display: flex;
     align-items: center;
+    }
+header {
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -174,8 +177,7 @@ section {
 
 .principles {
     display: flex;
-    padding-top: 94px;
-}
+    }
 
 .principle {
     width: 270px;
@@ -217,7 +219,6 @@ section {
 
 .activity-title {
     display: flex;
-    padding-bottom: 94px;
     }
 
 .activity-title .activity-photo:not(:last-child) {
@@ -227,7 +228,7 @@ section {
 /* ---------------OUR TEAM------------- */
 .section-team {
     background-color: #F5F4FA;
-}
+    }
 .team {
     margin-bottom: 50px;
     font-weight: 700;
@@ -329,7 +330,7 @@ address {
 
 /* ----------------PROGECTS BUTTONS------------- */
 .progects {
-    padding-top: 94px;
+    
 }
 .progects-title {
     position: absolute;
@@ -366,13 +367,12 @@ address {
 .progects-buttons {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
     }
-.progects-buttons .progects-filter:not(:last-child) {
+    
+.progects-filter:not(:last-child) {
     margin-right: 8px;
    }
-.progects-filter {
-    margin-bottom: 50px;
-}
 
     /* -----------PROGECTS PRESENTATION------------ */
 .progect-title {
@@ -381,6 +381,7 @@ address {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+    margin-bottom: 4px;
    }
 .progect-list {
     line-height: 1.88;
