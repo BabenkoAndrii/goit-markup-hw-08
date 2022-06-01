@@ -174,7 +174,9 @@ header {
     overflow: hidden;
 }
     /* робимо текст невидимим */
-
+.principles-section{
+   
+}
 .principles {
     display: flex;
     }
@@ -203,7 +205,9 @@ header {
     color: var(--content-text-color);
 }
 /* --------------ACTIVITY-------------- */
-
+.activity-section {
+    padding-top: 0;
+}
 .activity {
     margin-top: 0;
     margin-right: auto;
@@ -329,9 +333,7 @@ address {
 /* ----------------PORTFOLIO (second page html)------------- */
 
 /* ----------------PROGECTS BUTTONS------------- */
-.progects {
-    
-}
+
 .progects-title {
     position: absolute;
     width: 1px;
