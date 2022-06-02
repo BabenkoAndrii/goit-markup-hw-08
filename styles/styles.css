@@ -121,6 +121,7 @@ header {
 
 /* ----------------EFFECTIVE------------------- */
 .effect {
+    box-sizing: border-box;
     height: 600px;
     max-width: 1600px;
     left: 0px;
@@ -130,11 +131,16 @@ header {
     margin-left: auto;
     margin-right: auto;
     background-color: #C4C4C4;
-    background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)), url("../images/hw-04-imgs/overlay.jpg");
+    background-image: linear-gradient(
+    to right, 
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)), 
+    url("../images/hw-04-imgs/overlay.jpg");
+    border: 1px solid #000000;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+    }
 
 .effective {         
     font-weight: 900;
@@ -190,9 +196,9 @@ header {
     }
 
 .principle {
-    width: 270px;
-    
+    width: 270px;    
     }
+
 .principle:not(:last-child) {
     margin-right: 30px;
     }
@@ -211,6 +217,28 @@ header {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--content-text-color);
+}
+.principle::before {
+    content: '';
+    display: block;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    }
+.antenna::before {
+    background-image: url(../images/hw-04-imgs/antenna.svg);
+}
+.clock::before {
+    background-image: url(../images/hw-04-imgs/clock.svg);
+}
+.diagram::before {
+    background-image: url(../images/hw-04-imgs/diagram.svg);
+}
+.astronaut::before {
+    background-image: url(../images/hw-04-imgs/astronaut.svg);
 }
 /* --------------ACTIVITY-------------- */
 .activity-section {
