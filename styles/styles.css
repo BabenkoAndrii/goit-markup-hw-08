@@ -229,16 +229,16 @@ header {
     margin-bottom: 30px;
     }
 .antenna::before {
-    background-image: url(../images/hw-04-imgs/antenna.svg);
+    background-image: url("../images/hw-04-imgs/antenna.svg");
 }
 .clock::before {
-    background-image: url(../images/hw-04-imgs/clock.svg);
+    background-image: url("../images/hw-04-imgs/clock.svg");
 }
 .diagram::before {
-    background-image: url(../images/hw-04-imgs/diagram.svg);
+    background-image: url("../images/hw-04-imgs/diagram.svg");
 }
 .astronaut::before {
-    background-image: url(../images/hw-04-imgs/astronaut.svg);
+    background-image: url("../images/hw-04-imgs/astronaut.svg");
 }
 /* --------------ACTIVITY-------------- */
 .activity-section {
@@ -307,6 +307,30 @@ header {
 .members-title .member:not(:last-child) {
     margin-right: 30px;
 }
+/* ---------------Team's SVG----------- */
+.network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    padding: 0;
+}
+.network-list:not(:last-child) {
+    margin-right: 10px;
+}
+.network-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: black;
+         
+}
+.network-img {
+   fill: currentColor; 
+}
+
 /* --------------FOOTER------------- */
 .footer {
     background-color:#2F303A;
