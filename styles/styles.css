@@ -328,6 +328,7 @@ header {
     color: var(--content-text-color); 
     border: 1px solid red;
     justify-content: center;
+    align-items: center;
 }
 .network-link:hover,
 .network-link:focus {
@@ -335,6 +336,8 @@ header {
     }
 
 .network-img {
+    width: 20px;
+    height: 20px;
     fill: currentColor;
 }
 
