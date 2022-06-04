@@ -363,10 +363,8 @@ header {
     fill: currentColor;
 }
 /* ---------REGULAR CUSTOMERS-------- */
-.customers {
-    
+.customers {    
 }
-
 .customers-title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -376,13 +374,10 @@ header {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-
 .customers-list {
     display: flex;
 }
-
-.customers-item {
-        
+.customers-item {       
 }
 .customers-item:not(:last-child) {
     margin-right: 30px;
@@ -397,13 +392,11 @@ header {
     justify-content: center;
     color: var(--content-text-color);
 }
-
 .customers-link:hover,
 .customers-link:focus {
     color: var(--accent-blue-color);
     border-color: var(--accent-blue-color);
 }
-
 .customers-img {
     fill: currentColor;
 }
@@ -465,9 +458,51 @@ address {
 .contact:not(:last-child) {
     margin-bottom: 9px;
 }
+/* --------------FOOTER NETWORK ПРИСОЕДИНЯЙТЕСЬ---------- */
 
 /* ----------------PORTFOLIO (second page html)------------- */
+.footer-net {}
 
+.footer-net-title {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-net-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+/* .footer-and-net {
+    display: flex;
+    align-items: baseline;
+} */
+
+.footer-net-item {}
+
+.footer-net-link {
+    display: flex;
+    margin: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-net-link:hover,
+.footer-net-link:focus {
+    background-color: var(--accent-blue-color);
+    }
+
+.footer-net-img {
+    fill: var(--white-color);
+}
 /* ----------------PROGECTS BUTTONS------------- */
 
 .progects-title {
