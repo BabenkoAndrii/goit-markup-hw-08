@@ -325,9 +325,15 @@ header {
     height: 44px;
     margin-right: 10px;
     border-radius: 50%;
-    color: var(--content-text-color);
-         
+    color: var(--content-text-color); 
+    border: 1px solid red;
+    justify-content: center;
 }
+.network-link:hover,
+.network-link:focus {
+    color: var(--accent-blue-color);
+    }
+
 .network-img {
     fill: currentColor;
 }
