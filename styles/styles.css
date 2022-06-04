@@ -315,20 +315,21 @@ header {
     margin-top: 16px;
     padding: 0;
 }
-.network-list:not(:last-child) {
-    margin-right: 10px;
+.network-list {
+    
 }
+
 .network-link {
     display: flex;
     width: 44px;
     height: 44px;
     margin-right: 10px;
     border-radius: 50%;
-    color: black;
+    color: var(--content-text-color);
          
 }
 .network-img {
-   fill: currentColor; 
+    fill: currentColor;
 }
 
 /* --------------FOOTER------------- */
