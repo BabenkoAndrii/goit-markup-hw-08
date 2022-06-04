@@ -395,6 +395,7 @@ header {
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+    color: var(--content-text-color);
 }
 
 .customers-link:hover,
@@ -404,7 +405,6 @@ header {
 }
 
 .customers-img {
-    /* fill: #afb1b8;     */
     fill: currentColor;
 }
 /* --------------FOOTER------------- */
