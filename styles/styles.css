@@ -113,7 +113,11 @@ header {
 
 .list-header:hover,
 .list-header:focus {
-    color: var(--accent-blue-color);}
+    color: var(--accent-blue-color);
+    border: -1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
 .contacts {
     margin-left: auto;
     display: flex;        
@@ -121,10 +125,7 @@ header {
 .contacts .item + .item {
     margin-left: 50px;
 }
-.list-header:hover,
-.list-header:focus {
-    fill: var(--accent-blue-color);
-}
+
 .icon-envelope {
     fill: currentColor;
     margin-right: 10px;
@@ -344,7 +345,6 @@ header {
 .network-list:not(:last-child) {
     margin-right: 10px;
 }
-
 .network-link {
     display: flex;
     width: 44px;
@@ -359,11 +359,54 @@ header {
     background-color: var(--accent-blue-color);
     color: var(--white-color);
 }
-
 .network-img {
     fill: currentColor;
 }
+/* ---------REGULAR CUSTOMERS-------- */
+.customers {
+    
+}
 
+.customers-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.customers-list {
+    display: flex;
+}
+
+.customers-item {
+        
+}
+.customers-item:not(:last-child) {
+    margin-right: 30px;
+}
+.customers-link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    color: var(--accent-blue-color);
+    border-color: var(--accent-blue-color);
+}
+
+.customers-img {
+    /* fill: #afb1b8;     */
+    fill: currentColor;
+}
 /* --------------FOOTER------------- */
 .footer {
     background-color:#2F303A;
