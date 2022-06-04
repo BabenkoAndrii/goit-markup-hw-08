@@ -100,7 +100,7 @@ header {
 /* -----------------CONTACTS------------------- */
 
 .contacts a {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--content-text-color);
@@ -126,10 +126,11 @@ header {
 }
 .icon-envelope .icon-phone {
     fill: currentColor;
+    margin-right: 10px;
     
 }
 .item-mail .item-phone {
-    
+    margin-right: 10px;
 }
 
 /* ----------------EFFECTIVE------------------- */
