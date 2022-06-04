@@ -98,6 +98,7 @@ header {
     }
 
 /* -----------------CONTACTS------------------- */
+
 .contacts a {
     display: block;
     padding-top: 32px;
@@ -108,15 +109,27 @@ header {
     line-height: 1.14;
     letter-spacing: 0.02em;
     }
-.contacts a:hover,
-.contacts a:focus {
+.list-header:hover,
+.list-header:focus {
     color: var(--accent-blue-color);}
 .contacts {
     margin-left: auto;
-    display: flex;    
+    display: flex; 
+       
 }
 .contacts .item + .item {
     margin-left: 50px;
+}
+.list-header:hover,
+.list-header:focus {
+    fill: var(--accent-blue-color);
+}
+.icon-envelope .icon-phone {
+    fill: currentColor;
+    
+}
+.item-mail .item-phone {
+    
 }
 
 /* ----------------EFFECTIVE------------------- */
