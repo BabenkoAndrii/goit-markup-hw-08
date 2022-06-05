@@ -573,8 +573,7 @@ address {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    
-} 
+    } 
 .card {
     width: ((100%-60px) / 3);
     /* Формула для АВТОвирахування 
@@ -582,18 +581,26 @@ address {
     для карток */
     margin-right: 30px;
     margin-bottom: 30px;
+    /* Формула для вирахування 
+    рівномірного зазору між картками */
 }
-/* Формула для вирахування 
-рівномірного зазору між картками */
 .card:nth-child(3n) {
     margin-right: 0;
+    /* Формула: кожному третьому
+    чайлду правий маржин 0 */
 }
-/* Формула: кожному третьому
-чайлду правий маржин 0 */
 .card:nth-child(n + 6) {
     margin-bottom: 0;
+    /* прибрали всім елементам після шостого MB */
 }
-/* прибрали всім елементам після шостого MB */
+.card:hover,
+.card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    /* Курсор і тіні при ховері і фокусі на картках */
+}
 .three-sides-border {
     border-right: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC;
