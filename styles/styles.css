@@ -462,7 +462,10 @@ address {
 
 /* ----------------PORTFOLIO (second page html)------------- */
 .footer-net {
-    display: flex;
+    display: block;
+    
+    
+    
 }
 
 .footer-net-title {
@@ -480,10 +483,7 @@ address {
     padding: 0;
     display: flex;
 }
-/* .footer-and-net {
-    display: flex;
-    align-items: baseline;
-} */
+
 
 .footer-net-item {}
 
