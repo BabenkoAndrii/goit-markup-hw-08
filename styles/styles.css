@@ -461,7 +461,9 @@ address {
 /* --------------FOOTER NETWORK ПРИСОЕДИНЯЙТЕСЬ---------- */
 
 /* ----------------PORTFOLIO (second page html)------------- */
-.footer-net {}
+.footer-net {
+    display: flex;
+}
 
 .footer-net-title {
     color: #ffffff;
@@ -499,9 +501,10 @@ address {
 .footer-net-link:focus {
     background-color: var(--accent-blue-color);
     }
-
 .footer-net-img {
     fill: var(--white-color);
+    width: 20px;
+    height: 20px;
 }
 /* ----------------PROGECTS BUTTONS------------- */
 
