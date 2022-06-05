@@ -461,14 +461,15 @@ address {
 /* --------------FOOTER NETWORK ПРИСОЕДИНЯЙТЕСЬ---------- */
 
 /* ----------------PORTFOLIO (second page html)------------- */
+.footer-and-net {
+    display: flex;
+}
 .footer-net {
-    display: block;
-    
-    
-    
+   margin-left: 70px; 
 }
 
 .footer-net-title {
+    padding-top: 12px;
     color: #ffffff;
     font-style: normal;
     font-weight: 700;
@@ -484,8 +485,12 @@ address {
     display: flex;
 }
 
-
-.footer-net-item {}
+.footer-net-item {
+    margin-top: 20px;
+}
+.footer-net-item:not(:last-child) {
+    margin-right: 10px;
+}
 
 .footer-net-link {
     display: flex;
@@ -501,6 +506,7 @@ address {
 .footer-net-link:focus {
     background-color: var(--accent-blue-color);
     }
+
 .footer-net-img {
     fill: var(--white-color);
     width: 20px;
