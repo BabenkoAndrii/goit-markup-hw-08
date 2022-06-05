@@ -463,13 +463,13 @@ address {
 /* ----------------PORTFOLIO (second page html)------------- */
 .footer-and-net {
     display: flex;
+    align-items: baseline;
 }
 .footer-net {
    margin-left: 70px; 
 }
-
 .footer-net-title {
-    padding-top: 12px;
+    margin-bottom: 20px;
     color: #ffffff;
     font-style: normal;
     font-weight: 700;
@@ -478,20 +478,16 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-
 .footer-net-list {
     margin: 0;
     padding: 0;
     display: flex;
 }
-
-.footer-net-item {
-    margin-top: 20px;
+.footer-net-item {    
 }
 .footer-net-item:not(:last-child) {
     margin-right: 10px;
 }
-
 .footer-net-link {
     display: flex;
     margin: 0;
@@ -505,8 +501,7 @@ address {
 .footer-net-link:hover,
 .footer-net-link:focus {
     background-color: var(--accent-blue-color);
-    }
-
+}
 .footer-net-img {
     fill: var(--white-color);
     width: 20px;
@@ -596,8 +591,11 @@ address {
     margin-bottom: 0;
     /* прибрали всім елементам після шостого MB */
 }
-.card:hover,
-.card:focus {
+.card-link {
+    display: block;
+}
+.card a:hover,
+.card a:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
