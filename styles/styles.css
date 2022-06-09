@@ -80,11 +80,15 @@ header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;    
+    transition-property: color text-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 .site-nav a:hover,
 .site-nav a:focus   {
     color: var(--accent-blue-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .site-nav .link-page.current {
     color: var(--accent-blue-color);
@@ -109,6 +113,9 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition-property: color box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .list-header:hover,
@@ -189,10 +196,14 @@ header {
     cursor: pointer;   
     font-family: inherit;
     /* підтягуємо до кнопки стиль з шапки */
+    transition-property: color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-button:hover,
 .order-button:focus {
     background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* -----------------PRINCIPLES ---------------- */
 .principles-hidden {
@@ -353,6 +364,9 @@ header {
     color: var(--content-text-color); 
     justify-content: center;
     align-items: center;
+    transition-property: background-color color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .network-link:hover,
 .network-link:focus {
@@ -391,6 +405,9 @@ header {
     align-items: center;
     justify-content: center;
     color: var(--content-text-color);
+    transition-property: border-color color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -430,6 +447,9 @@ address {
     line-height: 1.7;
     letter-spacing: 0.03em; 
     color: var(--white-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .office-adress:hover,
 .office-adress:focus {
@@ -440,6 +460,9 @@ address {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .email:hover,
 .email:focus {
@@ -449,7 +472,10 @@ address {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);   
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tel:hover,
 .tel:focus {
@@ -459,8 +485,6 @@ address {
     margin-bottom: 9px;
 }
 /* --------------FOOTER NETWORK ПРИСОЕДИНЯЙТЕСЬ---------- */
-
-/* ----------------PORTFOLIO (second page html)------------- */
 .footer-and-net {
     display: flex;
     align-items: baseline;
@@ -497,6 +521,9 @@ address {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-net-link:hover,
 .footer-net-link:focus {
@@ -507,6 +534,7 @@ address {
     width: 20px;
     height: 20px;
 }
+/* ------------PORTFOLIO (second page html)------------- */
 /* ----------------PROGECTS BUTTONS------------- */
 
 .progects-title {
@@ -534,7 +562,9 @@ address {
     border-radius: 4px;
     border:var(--white-color);
     padding: 6px 22px;
-    /* margin-bottom: 50px; */
+    transition-property: background-color color box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -548,12 +578,10 @@ address {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    }
-    
+    }    
 .progects-filter:not(:last-child) {
     margin-right: 8px;
    }
-
     /* -----------PROGECTS PRESENTATION------------ */
 .progect-title {
     font-weight: 700;
@@ -593,6 +621,9 @@ address {
 }
 .card-link {
     display: block;
+    transition-property: box-shadow cursor;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card a:hover,
 .card a:focus {
