@@ -296,6 +296,31 @@ header {
 .activity-title .activity-photo:not(:last-child) {
     margin-right: 30px;
 }
+.activity-photo {
+    display: flex;
+    align-self: coloumn;
+    /* position: relative; */
+}
+.activity-bottom-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    left: 215px;
+    top: 1435px;
+    background: rgba(47, 48, 58, 0.8);
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;    
+    color: #FFFFFF;
+}
 
 /* ---------------OUR TEAM------------- */
 .section-team {
