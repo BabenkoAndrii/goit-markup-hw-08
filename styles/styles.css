@@ -94,6 +94,17 @@ header {
     color: var(--accent-blue-color);
 }
 /* так виглядає CURRENT (виділення назви поточної сторінки) */
+.link-page.current::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-blue-color);
+    border-radius: 2px;
+    margin-top: 27px;
+    
+}
 .site-nav {
     display: flex;
     }
