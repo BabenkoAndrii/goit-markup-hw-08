@@ -94,7 +94,7 @@ header {
     color: var(--accent-blue-color);
 }
 /* так виглядає CURRENT (виділення назви поточної сторінки) */
-.current::after {
+.link-page.current::after {
     display: block;
     content: '';
     position: relative;
@@ -111,9 +111,7 @@ header {
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
     }
-
 /* -----------------CONTACTS------------------- */
-
 .contacts a {
     display: flex;
     align-items: center;
@@ -134,7 +132,6 @@ header {
     color: var(--accent-blue-color);
     border: -1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
 }
 .contacts {
     margin-left: auto;
@@ -175,7 +172,6 @@ header {
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)), 
     url("../images/hw-04-imgs/overlay.jpg");
-    border: 1px solid #000000;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
