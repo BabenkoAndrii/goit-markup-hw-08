@@ -577,11 +577,9 @@ address {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
-.modal {
-     
-}
+
 .modal-close {
-    display: flex;
+    /* display: flex; */
     position: fixed;
     align-items: center;
     justify-content: center;
@@ -591,13 +589,14 @@ address {
     height: 30px;
     border-radius: 50%;
     
+    
    }
 .modal-close-svg {
-    display: flex;
     width: 11px;
     height: 11px;
     color: #000000;
     
+      
 }
 /* ------------PORTFOLIO (second page html)------------- */
 /* ------------PROGECTS BUTTONS----------------- */
