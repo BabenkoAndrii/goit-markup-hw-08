@@ -579,7 +579,7 @@ address {
 }
 
 .modal-close {
-    /* display: flex; */
+    display: flex;
     position: fixed;
     align-items: center;
     justify-content: center;
@@ -588,15 +588,15 @@ address {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
-    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;    
    }
+
 .modal-close-svg {
     width: 11px;
     height: 11px;
-    color: #000000;
-    
-      
+    fill: #000000;          
 }
 /* ------------PORTFOLIO (second page html)------------- */
 /* ------------PROGECTS BUTTONS----------------- */
