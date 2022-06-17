@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -332,6 +332,19 @@
             <use href="./images/hw-04-imgs/sprite.svg#icon-close"></use>
         </svg>
     </button>
+    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+    <form>
+        <label for="user-name" class="modal-lable">Имя</label>
+        <input type="text" class="modal-input" name="user-name" minlength="3">
+        <label for="user-tel" class="modal-lable">Телефон</label>
+        <input type="tel" class="modal-input" name="user-tel" 
+        required minlength="10" maxlength="13">
+        <label for="user-email" class="modal-lable">Почта</label>
+        <input type="email" class="modal-input" name="user-email">
+        <label for="modal-coment-id" class="modal-coment-label">Комментарий</label>
+        <textarea name="Комментарий" class="modal-coment" id="modal-coment-id" cols="" rows="5" placeholder="Введите текст"></textarea>
+        <button type="submit">Отправить</button>
+    </form>
    </div> 
 </div>
 <script src="./js/modal.js"></script>
