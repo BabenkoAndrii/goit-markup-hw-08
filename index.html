@@ -334,6 +334,7 @@
     </button>
     <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
     <form>
+        <div class="modal-field">
         <label for="user-name" class="modal-lable">Имя</label>
         <input type="text" class="modal-input" name="user-name" minlength="3">
         <label for="user-tel" class="modal-lable">Телефон</label>
@@ -342,8 +343,15 @@
         <label for="user-email" class="modal-lable">Почта</label>
         <input type="email" class="modal-input" name="user-email">
         <label for="modal-coment-id" class="modal-coment-label">Комментарий</label>
-        <textarea name="Комментарий" class="modal-coment" id="modal-coment-id" cols="" rows="5" placeholder="Введите текст"></textarea>
-        <button type="submit">Отправить</button>
+        <textarea name="Комментарий" class="modal-coment" id="modal-coment-id" placeholder="Введите текст"></textarea>
+        </div>
+        <fieldset class="agree-checkpoint-fieldset">
+            <legend class="agree-legend">checkbox</legend>
+            <input type="checkbox" id="agree" name="agree" class="agree-checkpoint" value="agree" required>
+            <label for="agree" class="agree-checkpoint-label">Соглашаюсь с рассылкой и принимаю 
+                <a href=""><span class="agree-checkpoint-label-link">Условия договора</span></a></label>
+        </fieldset>
+        <button type="submit" class="modal-submit-button">Отправить</button>
     </form>
    </div> 
 </div>
