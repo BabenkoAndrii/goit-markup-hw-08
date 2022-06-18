@@ -718,7 +718,9 @@ address {
 
 .agree-checkpoint-fieldset {
     border: none;
-}
+    
+    }
+
 .agree-legend {
     position: absolute;
     width: 1px;
@@ -748,21 +750,21 @@ address {
     width: 16px;
     height: 15px;
     margin-right: 8px;
-    /* background: var(--title-text-color); */
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
-    
-   
+     
 }
 
 .agree-checkpoint-label { 
     display: flex;   
-    text-align;
+    flex-wrap: wrap;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+    align-items: center;
+    
 }
 
 .agree-checkpoint-label-link {
