@@ -621,15 +621,37 @@ address {
 }
 
 .modal-field {
-        
+    margin-bottom: 10px;
 }
+
+.input-wraw {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    fill: var(--title-text-color);
+    transform: translateY(-50%); 
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus .modal-icon {
+    fill: var(--accent-blue-color);
+}
+
 .modal-input {
     width: 100%;
     height: 40px;
-    margin-bottom: 10px;
-    padding: 0px 12px 0px 12px;
+    padding: 0px 12px 0px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus,
@@ -667,6 +689,9 @@ address {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-coment::placeholder{
@@ -695,11 +720,16 @@ address {
 }
 
 .agree-checkpoint {
-    /* display: block;
-    width: 16px;
-    height: 15px;
-    background: var(--accent-blue-color);
-    border-radius: 2px; */
+    
+}
+
+.agree-checkpoint::before {
+    /* content: '';
+    display: block;
+          
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; */
 }
 
 .agree-checkpoint-label {    
