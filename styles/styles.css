@@ -46,6 +46,19 @@ section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 /* ---------------HEADER----------------- */
 .page-header {
@@ -639,7 +652,7 @@ address {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus .modal-icon {
+.modal-input:focus + .modal-icon {
     fill: var(--accent-blue-color);
 }
 
@@ -719,20 +732,33 @@ address {
     overflow: hidden;
 }
 
-.agree-checkpoint {
+.agree-checkpoint:checked + .agree-checkpoint-label::before {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--accent-blue-color); 
+    background-image: url(../images/vector.svg);
+    background-repeat: no-repeat;  
+    background-position: center;
+    border: none;
     
 }
 
-.agree-checkpoint::before {
-    /* content: '';
-    display: block;
-          
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px; */
+.agree-checkpoint-label::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    /* background: var(--title-text-color); */
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    
+   
 }
 
-.agree-checkpoint-label {    
+.agree-checkpoint-label { 
+    display: flex;   
+    text-align;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -740,16 +766,24 @@ address {
 }
 
 .agree-checkpoint-label-link {
+    color: var(--content-text-color);
+  }
+
+.agree-checkpoint-label-link:hover {
     color: var(--accent-blue-color);
     text-decoration-line: underline;
 }
 
+
 .modal-submit-button {
-    
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
     width: 200px;
     height: 50px;
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
     border-radius: 4px;
     font-style: normal;
     font-weight: 700;
@@ -777,6 +811,7 @@ address {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+/* ---visually hidden - приховуємо елемент--- */
 .button-filter {
     font-weight: 500;
     font-size: 16px;
