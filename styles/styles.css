@@ -571,6 +571,66 @@ address {
     width: 20px;
     height: 20px;
 }
+/* -------FOOTER Subscribe подписка----------*/
+.footer-subscribe {
+    margin-left: 93px;
+}
+
+.footer-subscribe-label {
+    display: block;
+    font-style: normal;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.footer-subscribe-input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--white-color);
+    outline: none;
+}
+
+.footer-subscribe-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;  
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe-button {
+    position: relative;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.footer-subscribe-button-svg {
+    position: absolute;
+   
+}
+
 /* ------------MODAL--------------------------- */
 .backdrop {
     position: fixed;
