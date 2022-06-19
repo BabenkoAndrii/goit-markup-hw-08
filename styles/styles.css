@@ -573,6 +573,7 @@ address {
 }
 /* -------FOOTER Subscribe подписка----------*/
 .footer-subscribe {
+    
     margin-left: 93px;
 }
 
@@ -607,6 +608,11 @@ address {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-subscribe-button-div {
+    
+    
+}
+
 .footer-subscribe-button {
     position: relative;
     margin-left: 12px;
@@ -627,6 +633,8 @@ address {
     cursor: pointer;
 }
 .footer-subscribe-button-svg {
+    
+    margin-left: 10px;
     position: absolute;
    
 }
