@@ -184,7 +184,7 @@ header {
     to right, 
     rgba(47, 48, 58, 0.4), 
     rgba(47, 48, 58, 0.4)), 
-    url("../images/hw-04-imgs/overlay.jpg");
+    url("../images/imgs/overlay.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -279,16 +279,16 @@ header {
     margin-bottom: 30px;
     }
 .antenna::before {
-    background-image: url("../images/hw-04-imgs/antenna.svg");
+    background-image: url("../images/imgs/antenna.svg");
 }
 .clock::before {
-    background-image: url("../images/hw-04-imgs/clock.svg");
+    background-image: url("../images/imgs/clock.svg");
 }
 .diagram::before {
-    background-image: url("../images/hw-04-imgs/diagram.svg");
+    background-image: url("../images/imgs/diagram.svg");
 }
 .astronaut::before {
-    background-image: url("../images/hw-04-imgs/astronaut.svg");
+    background-image: url("../images/imgs/astronaut.svg");
 }
 /* --------------ACTIVITY-------------- */
 .activity-section {
