@@ -573,7 +573,6 @@ address {
 }
 /* -------FOOTER Subscribe подписка----------*/
 .footer-subscribe {
-    
     margin-left: 93px;
 }
 
@@ -606,11 +605,6 @@ address {
     line-height: 1.25;
     letter-spacing: 0.03em;  
     color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-subscribe-button-div {
-    
-    
 }
 
 .footer-subscribe-button {
