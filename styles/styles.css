@@ -61,7 +61,7 @@ section {
 }
 
 /* ---------------HEADER----------------- */
-.page-header {
+.header {
     display: flex;
     align-items: center;
     }
