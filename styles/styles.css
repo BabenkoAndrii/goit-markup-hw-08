@@ -215,19 +215,19 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* -----------------PRINCIPLES ---------------- */
-.principles__title {
+.principle__title {
     display: flex;
     }
 
-.principles__list {
+.principle__list {
     width: 270px;    
     }
 
-.principles__list:not(:last-child) {
+.principle__list:not(:last-child) {
     margin-right: 30px;
     }
 
-.principles-item {
+.principle__item {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -236,13 +236,13 @@ header {
     text-transform: uppercase;
     color: var(--title-text-color);
 }
-.principles-name {
+.principle__name {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--content-text-color);
 }
-.principles__list::before {
+.principle__list::before {
     content: '';
     display: block;
     height: 120px;
@@ -265,10 +265,10 @@ header {
     background-image: url("../images/imgs/astronaut.svg");
 }
 /* --------------ACTIVITY-------------- */
-.activity-section {
+.activity {
     padding-top: 0;
 }
-.activity {
+.activity__title {
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 50px;
@@ -281,18 +281,18 @@ header {
     color: var(--title-text-color);
 }
 
-.activity-title {
+.activ {
     display: flex;
     }
 
-.activity-title .activity-photo:not(:last-child) {
+.activ .activ__photo:not(:last-child) {
     margin-right: 30px;
 }
-.activity-photo {
+.activ__photo {
     display: flex;
     position: relative;
 }
-.activity-bottom-block {
+.activ__block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
