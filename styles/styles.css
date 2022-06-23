@@ -80,12 +80,12 @@ header {
     color: var(--accent-blue-color);
     text-decoration: none;
     }
-.logo-right-part {
+.logo__color {
     color: #000000;
 }
 
 /* -------------------SITE NAV --------------------- */
-.site-nav a {
+.nav a {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -98,16 +98,16 @@ header {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-.site-nav a:hover,
-.site-nav a:focus   {
+.nav a:hover,
+.nav a:focus   {
     color: var(--accent-blue-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.site-nav .link-page.current {
+.nav .nav__link.current {
     color: var(--accent-blue-color);
 }
 /* так виглядає CURRENT (виділення назви поточної сторінки) */
-.link-page.current::after {
+.nav__link.current::after {
     display: block;
     content: '';
     position: relative;
@@ -118,10 +118,10 @@ header {
     top: 33px;  
     /* ПІДКРЕСЛЮВАННЯ НАЗВИ ПОТОЧНОЇ АКТИВНОЇ СТОРІНКИ */
 }
-.site-nav {
+.nav {
     display: flex;
     }
-.site-nav .item:not(:last-child) {
+.nav .nav__item:not(:last-child) {
     margin-right: 50px;
     }
 /* -----------------CONTACTS------------------- */
@@ -140,8 +140,8 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-.list-header:hover,
-.list-header:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--accent-blue-color);
     border: -1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -150,23 +150,14 @@ header {
     margin-left: auto;
     display: flex;        
 }
-.contacts .item + .item {
+.contacts .contacts__mail + .contacts__phone {
     margin-left: 50px;
 }
 
-.icon-envelope {
+.contacts__icon {
     fill: currentColor;
     margin-right: 10px;
-    width: 16px;
-    height: 12px;
     }
-.icon-phone {
-    fill: currentColor;
-    margin-right: 10px;
-    width: 10px;
-    height: 16px;
-}
-
 
 /* ----------------EFFECTIVE------------------- */
 .effect {
