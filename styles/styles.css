@@ -806,7 +806,7 @@ address {
     text-decoration-line: underline;
   }
 
-.modal__submit-button {
+.modal__submit-btn {
     display: block;
     margin-left: 50%;
     transform: translateX(-50%);
