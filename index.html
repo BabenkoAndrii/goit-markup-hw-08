@@ -296,48 +296,48 @@
     </section>
     <!-----------------FOOTER------------------->
     <footer class="footer">
-        <div class="container footer-and-net">
-            <div class="logo-and-contact">
+        <div class="container footer__box">
+            <div class="logo-contact">
                 <a href="./index.html" lang="en" class="logo-footer">Web<span
-                        class="logo-right-part-footer">Studio</span></a>
-                <address id="contacts">
-                    <ul class="contact-information">
-                        <li class="contact"><a href="https://goo.gl/maps/5NBiRJ6fufDWpeWJ9" target="_blank"
-                                rel="noopener nofollow noreferrer" class="office-adress">г. Киев, пр-т Леси Украинки, 26
+                        class="logo-footer__color">Studio</span></a>
+                        <address id="contacts">
+                    <ul class="footer-contact">
+                        <li class="footer-contact__list"><a href="https://goo.gl/maps/5NBiRJ6fufDWpeWJ9" target="_blank"
+                                rel="noopener nofollow noreferrer" class="footer-contact__adress">г. Киев, пр-т Леси Украинки, 26
                             </a></li>
-                        <li class="contact"><a href="mailto:info@example.com" class="email">info@example.com</a></li>
-                        <li class="contact"><a href="tel:+380991111111" class="tel">+38 099 111 11 11</a></li>
+                        <li class="footer-contact__list"><a href="mailto:info@example.com" class="footer-contact__email">info@example.com</a></li>
+                        <li class="footer-contact__list"><a href="tel:+380991111111" class="footer-contact__tel">+38 099 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
             <!-----------FOOTER NETWORK ПРИСОЕДИНЯЙТЕСЬ-------->
             <div class="footer-net">
-                <p class="footer-net-title">Присоединяйтесь</p>
-                <ul class="footer-net-list">
-                    <li class="footer-net-item">
-                        <a class="footer-net-link" href="">
-                            <svg class="footer-net-img" width="20" height="20">
+                <p class="footer-net__title">Присоединяйтесь</p>
+                <ul class="footer-net__list">
+                    <li class="footer-net__item">
+                        <a class="footer-net__link" href="">
+                            <svg class="footer-net__img" width="20" height="20">
                                 <use href="./images/imgs/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-net-item">
-                        <a class="footer-net-link" href="">
-                            <svg class="footer-net-img" width="20" height="20">
+                    <li class="footer-net__item">
+                        <a class="footer-net__link" href="">
+                            <svg class="footer-net__img" width="20" height="20">
                                 <use href="./images/imgs/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-net-item">
-                        <a class="footer-net-link" href="">
-                            <svg class="footer-net-img" width="20" height="20">
+                    <li class="footer-net__item">
+                        <a class="footer-net__link" href="">
+                            <svg class="footer-net__img" width="20" height="20">
                                 <use href="./images/imgs/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-net-item">
-                        <a class="footer-net-link" href="">
-                            <svg class="footer-net-img" width="20" height="20">
+                    <li class="footer-net__item">
+                        <a class="footer-net__link" href="">
+                            <svg class="footer-net__img" width="20" height="20">
                                 <use href="./images/imgs/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -346,12 +346,12 @@
             </div>
             <!-----------------FOOTER Subscribe подписка----------------------->
             <form>
-                <div class="footer-subscribe">
-                    <label for="user-mail" class="footer-subscribe-label">Подпишитесь на рассылку</label>
-                    <input type="email" class="footer-subscribe-input" name="user-mail" id="user-mail"
+                <div class="subscribe">
+                    <label for="user-mail" class="subscribe__label">Подпишитесь на рассылку</label>
+                    <input type="email" class="subscribe__input" name="user-mail" id="user-mail"
                         placeholder="E-mail" required>
-                    <button type="submit" class="footer-subscribe-button">Подписаться
-                        <svg class="footer-subscribe-button-svg" width="24" height="24">
+                    <button type="submit" class="subscribe__btn">Подписаться
+                        <svg class="subscribe__svg" width="24" height="24">
                             <use href="./images/imgs/sprite.svg#icon-icon-send"></use>
                         </svg>
                     </button>
@@ -362,54 +362,54 @@
     <!------------------MODAL-------------------->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close" data-modal-close>
-                <svg class="modal-close-svg" width="11" height="11">
+            <button type="button" class="modal__close" data-modal-close>
+                <svg class="modal__close-svg" width="11" height="11">
                     <use href="./images/imgs/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
             <form>
-                <div class="modal-field">
-                    <label for="user-name" class="modal-lable">Имя</label>
-                    <div class="input-wraw"><input type="text" class="modal-input" id="user-name" name="user-name"
+                <div class="modal__field">
+                    <label for="user-name" class="modal__lable">Имя</label>
+                    <div class="modal__input-box"><input type="text" class="modal__input" id="user-name" name="user-name"
                             minlength="3">
-                        <svg class="modal-icon" width="18px" height="18px">
+                        <svg class="modal__icon" width="18px" height="18px">
                             <use href="./images/imgs/sprite.svg#icon-person-black"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="modal-field">
-                    <label for="user-tel" class="modal-lable">Телефон</label>
-                    <div class="input-wraw"><input type="tel" class="modal-input" id="user-tel" name="user-tel" required
+                <div class="modal__field">
+                    <label for="user-tel" class="modal__lable">Телефон</label>
+                    <div class="modal__input-box"><input type="tel" class="modal__input" id="user-tel" name="user-tel" required
                             minlength="10" maxlength="13">
-                        <svg class="modal-icon" width="18px" height="18px">
+                        <svg class="modal__icon" width="18px" height="18px">
                             <use href="./images/imgs/sprite.svg#icon-phone-black"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="modal-field">
-                    <label for="user-email" class="modal-lable">Почта</label>
-                    <div class="input-wraw"><input type="email" class="modal-input" id="user-email" name="user-email">
-                        <svg class="modal-icon" width="18px" height="18px">
+                <div class="modal__field">
+                    <label for="user-email" class="modal__lable">Почта</label>
+                    <div class="modal__input-box"><input type="email" class="modal__input" id="user-email" name="user-email">
+                        <svg class="modal__icon" width="18px" height="18px">
                             <use href="./images/imgs/sprite.svg#icon-email-black"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="modal-field">
-                    <label for="modal-coment-id" class="modal-coment-label">Комментарий</label>
-                    <textarea name="modal-coment-id" class="modal-coment" id="modal-coment-id"
+                <div class="modal__coment-field">
+                    <label for="modal-coment-id" class="modal__coment-label">Комментарий</label>
+                    <textarea name="modal-coment-id" class="modal__coment" id="modal-coment-id"
                         placeholder="Введите текст"></textarea>
                 </div>
-                <div class="modal-field-сheckbox">
-                    <fieldset class="agree-checkpoint-fieldset">
-                        <legend class="agree-legend">checkbox</legend>
-                        <input type="checkbox" id="agree" name="agree" class="agree-checkpoint visually-hidden"
+                <div class="modal__сheckbox">
+                    <fieldset class="modal__checkpoint-fieldset">
+                        <legend class="modal__legend">checkbox</legend>
+                        <input type="checkbox" id="agree" name="agree" class="modal__checkpoint visually-hidden"
                             required>
-                        <label for="agree" class="agree-checkpoint-label"><span>Соглашаюсь с рассылкой и принимаю
-                                <a class="agree-checkpoint-label-link" href="">Условия договора</a></span></label>
+                        <label for="agree" class="modal__checkpoint-label"><span>Соглашаюсь с рассылкой и принимаю
+                                <a class="modal__checkpoint-label-link" href="">Условия договора</a></span></label>
                     </fieldset>
                 </div>
-                <button type="submit" class="modal-submit-button">Отправить</button>
+                <button type="submit" class="modal__submit-button">Отправить</button>
             </form>
         </div>
     </div>

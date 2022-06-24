@@ -435,6 +435,12 @@ header {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer__box {
+    display: flex;
+    align-items: baseline;
+}
+
 .logo-footer {
     display: block;
     font-family: 'Raleway', sans-serif;
@@ -447,14 +453,14 @@ header {
     text-decoration: none;
     margin-bottom: 20px;
 }
-.logo-right-part-footer {
+.logo-footer__color {
     color: var(--white-color);
 }
 address {
     font-style: normal;
 }
 /* Виправив шрифт посилань на нормальний */
-.office-adress {
+.footer-contact__adress {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em; 
@@ -463,11 +469,11 @@ address {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.office-adress:hover,
-.office-adress:focus {
+.footer-contact__adress:hover,
+.footer-contact__adress:focus {
     color: var(--accent-blue-color);
 }
-.email {
+.footer-contact__email {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -476,11 +482,11 @@ address {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.email:hover,
-.email:focus {
+.footer-contact__email:hover,
+.footer-contact__email:focus {
     color: var(--accent-blue-color);
 }
-.tel {
+.footer-contact__tel {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -489,22 +495,18 @@ address {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.tel:hover,
-.tel:focus {
+.footer-contact__tel:hover,
+.footer-contact__tel:focus {
     color: var(--accent-blue-color);
 }
-.contact:not(:last-child) {
+.footer-contact__list:not(:last-child) {
     margin-bottom: 9px;
 }
-/* --------------FOOTER NETWORK ПРИСОЕДИНЯЙТЕСЬ---------- */
-.footer-and-net {
-    display: flex;
-    align-items: baseline;
-}
+/* -----FOOTER NETWORK ПРИСОЕДИНЯЙТЕСЬ---------- */
 .footer-net {
    margin-left: 70px; 
 }
-.footer-net-title {
+.footer-net__title {
     margin-bottom: 20px;
     color: #ffffff;
     font-style: normal;
@@ -514,16 +516,16 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.footer-net-list {
+.footer-net__list {
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.footer-net-item:not(:last-child) {
+.footer-net__item:not(:last-child) {
     margin-right: 10px;
 }
-.footer-net-link {
+.footer-net__link {
     display: flex;
     margin: 0;
     width: 44px;
@@ -536,21 +538,21 @@ address {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-net-link:hover,
-.footer-net-link:focus {
+.footer-net__link:hover,
+.footer-net__link:focus {
     background-color: var(--accent-blue-color);
 }
-.footer-net-img {
+.footer-net__img {
     fill: var(--white-color);
     width: 20px;
     height: 20px;
 }
 /* -------FOOTER Subscribe подписка----------*/
-.footer-subscribe {
+.subscribe {
     margin-left: 93px;
 }
 
-.footer-subscribe-label {
+.subscribe__label {
     display: block;
     font-style: normal;
     margin-bottom: 20px;
@@ -562,7 +564,7 @@ address {
     color: var(--white-color);
 }
 
-.footer-subscribe-input {
+.subscribe__input {
     width: 358px;
     height: 50px;
     padding-left: 16px;
@@ -574,14 +576,14 @@ address {
     outline: none;
 }
 
-.footer-subscribe-input::placeholder {
+.subscribe__input::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;  
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-subscribe-button {
+.subscribe__btn {
     display: inline-flex;
     justify-content: center;  
     margin-left: 12px;
@@ -600,9 +602,8 @@ address {
     color: var(--white-color);
     cursor: pointer;
 }
-.footer-subscribe-button-svg {
+.subscribe__svg {
     margin-left: 10px;
-      
 }
 
 /* ------------MODAL--------------------------- */
@@ -632,7 +633,7 @@ address {
     padding: 40px;
    }
 
-.modal-close {
+.modal__close {
     display: flex;
     position: fixed;
     align-items: center;
@@ -647,13 +648,13 @@ address {
     cursor: pointer;    
    }
 
-.modal-close-svg {
+.modal__close-svg {
     width: 11px;
     height: 11px;
     fill: #000000;          
 }
 
-.modal-title {
+.modal__title {
     text-align: center;
     justify-content: center;
     font-style: normal;
@@ -666,15 +667,15 @@ address {
     color: var(--title-text-color);
 }
 
-.modal-field {
+.modal__coment-field {
     margin-bottom: 10px;
 }
 
-.input-wraw {
+.modal__input-box {
     position: relative;
 }
 
-.modal-icon {
+.modal__icon {
     position: absolute;
     left: 12px;
     top: 50%;
@@ -685,11 +686,11 @@ address {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus + .modal-icon {
+.modal__input:focus + .modal__icon {
     fill: var(--accent-blue-color);
 }
 
-.modal-input {
+.modal__input {
     width: 100%;
     height: 40px;
     padding: 0px 12px 0px 42px;
@@ -700,12 +701,12 @@ address {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus,
-.modal-coment:focus {
+.modal__input:focus,
+.modal__coment:focus {
     outline: none;
     border-color: var(--accent-blue-color);
 }
-.modal-lable {
+.modal__lable {
     display: block;
     margin-bottom: 4px;
     font-style: normal;
@@ -715,7 +716,7 @@ address {
     letter-spacing: 0.01em;
     color: #757575;
 }
-.modal-coment-label {
+.modal__coment-label {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -723,11 +724,11 @@ address {
     letter-spacing: 0.01em;
     color: #757575;
 }
-.modal-coment-label {
+.modal__coment-label {
     display: block;
     margin-bottom: 4px;
 }
-.modal-coment {
+.modal__coment {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -739,7 +740,7 @@ address {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-coment::placeholder{
+.modal__coment::placeholder{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -748,13 +749,13 @@ address {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.agree-checkpoint-fieldset {
+.modal__checkpoint-fieldset {
     border: none;
     padding-left: 5px;
     padding-right: 5px;    
     }
 
-.agree-legend {
+.modal__legend {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -767,7 +768,7 @@ address {
     overflow: hidden;
 }
 
-.agree-checkpoint:checked + .agree-checkpoint-label::before {
+.modal__checkpoint:checked + .modal__checkpoint-label::before {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--accent-blue-color); 
@@ -778,7 +779,7 @@ address {
     
 }
 
-.agree-checkpoint-label::before {
+.modal__checkpoint-label::before {
     content: '';
     width: 16px;
     height: 15px;
@@ -789,7 +790,7 @@ address {
      
 }
 
-.agree-checkpoint-label { 
+.modal__checkpoint-label { 
     display: flex;   
     flex-wrap: wrap;
     font-size: 14px;
@@ -800,12 +801,12 @@ address {
     
 }
 
-.agree-checkpoint-label-link {
+.modal__checkpoint-label-link {
     color: var(--accent-blue-color);
     text-decoration-line: underline;
   }
 
-.modal-submit-button {
+.modal__submit-button {
     display: block;
     margin-left: 50%;
     transform: translateX(-50%);
