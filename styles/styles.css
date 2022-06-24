@@ -829,7 +829,7 @@ address {
 /* ------------PORTFOLIO (second page html)------------- */
 /* ------------PROGECTS BUTTONS----------------- */
 
-.progects-title {
+.progects__title {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -843,7 +843,7 @@ address {
     overflow: hidden;
 }
 /* ---visually hidden - приховуємо елемент--- */
-.button-filter {
+.progects__btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -859,36 +859,24 @@ address {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-filter:hover,
-.button-filter:focus {
+.progects__btn:hover,
+.progects__btn:focus {
     background-color:var(--accent-blue-color);
     color: var(--white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 1px 2px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
     }
-.progects-buttons {
+.progects__buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     }    
-.progects-filter:not(:last-child) {
+.progects__filter:not(:last-child) {
     margin-right: 8px;
    }
-    /* -----------PROGECTS PRESENTATION------------ */
-.progect-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--title-text-color);
-    margin-bottom: 4px;
-   }
-.progect-list {
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color:var(--content-text-color);
-    }  
+    /* -----------PROGECTS CARDS------------ */
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -912,7 +900,7 @@ address {
     margin-bottom: 0;
     /* прибрали всім елементам після шостого MB */
 }
-.card-link {
+.card__link {
     display: block;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -926,15 +914,15 @@ address {
     cursor: pointer;
     /* Курсор і тіні при ховері і фокусі на картках */
     }
-.cards-image {
+.card__block {
     position: relative;
     overflow-y: hidden;
 }
-.card-link:hover .card-overlay,
-.card-link:focus .card-overlay {
+.card__link:hover .card__overlay,
+.card__link:focus .card__overlay {
     transform: translate(0);
 }
-.card-overlay {
+.card__overlay {
     position: absolute;
     top: 0;
     height: 100%;
@@ -949,13 +937,25 @@ address {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.three-sides-border {
+.card__three-sides-border {
     border-right: 1px solid #ECECEC;
     border-bottom: 1px solid #ECECEC;
     border-left: 1px solid #ECECEC;
     /* рамка з трьох сторін */
     padding: 20px 24px;
 }
-.image {
-    display: block;
-    }
+
+.card__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    margin-bottom: 4px;
+}
+
+.card__list {
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--content-text-color);
+}
