@@ -22,6 +22,29 @@ header {
 }
 
 /* -------------------SITE NAV --------------------- */
+.nav {
+    display: flex;
+    & a:hover,
+    & a:focus {
+        color: var(--accent-blue-color);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        & .nav__item:not(:last-child) {
+        margin-right: 50px;
+        }
+    &__link.current::after {
+        display: block;
+        content: '';
+        position: relative;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-blue-color);
+        border-radius: 2px;
+        top: 33px;
+        /* ПІДКРЕСЛЮВАННЯ НАЗВИ ПОТОЧНОЇ АКТИВНОЇ СТОРІНКИ */
+        }
+}
+
 .nav a {
     display: block;
     padding-top: 32px;
@@ -36,38 +59,23 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav a:hover,
-.nav a:focus {
-    color: var(--accent-blue-color);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .nav .nav__link.current {
     color: var(--accent-blue-color);
-}
-/* так виглядає CURRENT (виділення назви поточної сторінки) */
-
-.nav__link.current::after {
-    display: block;
-    content: '';
-    position: relative;
-    width: 100%;
-    height: 4px;
-    background: var(--accent-blue-color);
-    border-radius: 2px;
-    top: 33px;
-    /* ПІДКРЕСЛЮВАННЯ НАЗВИ ПОТОЧНОЇ АКТИВНОЇ СТОРІНКИ */
-}
-
-.nav {
-    display: flex;
-}
-
-.nav .nav__item:not(:last-child) {
-    margin-right: 50px;
+    /* так виглядає CURRENT (виділення назви поточної сторінки) */
 }
 
 /* -----------------CONTACTS------------------- */
+
+.contacts {
+    margin-left: auto;
+    display: flex;
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-blue-color);
+        border: -1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+}
 .contacts a {
     display: flex;
     align-items: center;
@@ -81,18 +89,6 @@ header {
     transition-property: color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-blue-color);
-    border: -1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.contacts {
-    margin-left: auto;
-    display: flex;
 }
 
 .contacts .contacts__mail+.contacts__phone {
