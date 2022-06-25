@@ -45,8 +45,8 @@ header {
 .nav .nav__link.current {
     color: var(--accent-blue-color);
 }
-
 /* так виглядає CURRENT (виділення назви поточної сторінки) */
+
 .nav__link.current::after {
     display: block;
     content: '';
