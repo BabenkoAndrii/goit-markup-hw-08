@@ -7,12 +7,6 @@
     transition: opacity 400ms, visibility 400ms;
 }
 
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-
 .modal {
     position: absolute;
     top: 50%;
@@ -135,15 +129,14 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__coment::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .modal__checkpoint-fieldset {
@@ -173,7 +166,6 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-
 }
 
 .modal__checkpoint-label::before {

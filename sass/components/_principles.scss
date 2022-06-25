@@ -4,10 +4,19 @@
 
 .principle__list {
     width: 270px;
-}
-
-.principle__list:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+        &::before {
+            content: '';
+            display: block;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #F5F4FA;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
 }
 
 .principle__item {
@@ -25,17 +34,6 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--content-text-color);
-}
-
-.principle__list::before {
-    content: '';
-    display: block;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    margin-bottom: 30px;
 }
 
 .antenna::before {

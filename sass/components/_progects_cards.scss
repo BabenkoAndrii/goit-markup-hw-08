@@ -12,17 +12,15 @@
     margin-bottom: 30px;
     /* Формула для вирахування 
     рівномірного зазору між картками */
-}
-
-.card:nth-child(3n) {
-    margin-right: 0;
-    /* Формула: кожному третьому
-    чайлду правий маржин 0 */
-}
-
-.card:nth-child(n + 6) {
-    margin-bottom: 0;
-    /* прибрали всім елементам після шостого MB */
+    &:nth-child(3n) {
+        margin-right: 0;
+        /* Формула: кожному третьому
+        чайлду правий маржин 0 */
+        }
+            &:nth-child(n + 6) {
+                margin-bottom: 0;
+                /* прибрали всім елементам після шостого MB */
+            }
 }
 
 .card__link {
@@ -30,25 +28,19 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card a:hover,
-.card a:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-    /* Курсор і тіні при ховері і фокусі на картках */
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+            /* Курсор і тіні при ховері і фокусі на картках */
+        }
 }
 
 .card__block {
     position: relative;
     overflow-y: hidden;
-}
-
-.card__link:hover .card__overlay,
-.card__link:focus .card__overlay {
-    transform: translate(0);
 }
 
 .card__overlay {
@@ -65,6 +57,10 @@
     transform: translateY(100%);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        .card__link:hover &,
+        .card__link:focus & {
+            transform: translate(0);
+        }
 }
 
 .card__three-sides-border {

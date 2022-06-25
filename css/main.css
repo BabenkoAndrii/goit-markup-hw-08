@@ -66,6 +66,12 @@ section {
   overflow: hidden;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,20 +110,6 @@ header {
   color: var(--accent-blue-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.nav .nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-.nav__link.current::after {
-  display: block;
-  content: "";
-  position: relative;
-  width: 100%;
-  height: 4px;
-  background: var(--accent-blue-color);
-  border-radius: 2px;
-  top: 33px;
-  /* ПІДКРЕСЛЮВАННЯ НАЗВИ ПОТОЧНОЇ АКТИВНОЇ СТОРІНКИ */
-}
 
 .nav a {
   display: block;
@@ -136,9 +128,25 @@ header {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav .nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav .nav__link.current {
   color: var(--accent-blue-color);
   /* так виглядає CURRENT (виділення назви поточної сторінки) */
+}
+
+.nav__link.current::after {
+  display: block;
+  content: "";
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-blue-color);
+  border-radius: 2px;
+  top: 33px;
+  /* ПІДКРЕСЛЮВАННЯ НАЗВИ ПОТОЧНОЇ АКТИВНОЇ СТОРІНКИ */
 }
 
 /* -----------------CONTACTS------------------- */
@@ -243,9 +251,7 @@ header {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.effect__button:hover,
-.effect__button:focus {
+.effect__button:hover, .effect__button:focus {
   background-color: #188ce8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -260,9 +266,18 @@ header {
 .principle__list {
   width: 270px;
 }
-
 .principle__list:not(:last-child) {
   margin-right: 30px;
+}
+.principle__list::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .principle__item {
@@ -280,17 +295,6 @@ header {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--content-text-color);
-}
-
-.principle__list::before {
-  content: "";
-  display: block;
-  height: 120px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  margin-bottom: 30px;
 }
 
 .antenna::before {
@@ -332,15 +336,14 @@ header {
   display: flex;
 }
 
-.activ .activ__photo:not(:last-child) {
-  margin-right: 30px;
-}
-
 .activ__photo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+.activ .activ__photo:not(:last-child) {
+  margin-right: 30px;
 }
 
 .activ__block {
@@ -383,6 +386,12 @@ header {
   color: var(--title-text-color);
 }
 
+.members {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .members__name {
   font-weight: 500;
   font-size: 16px;
@@ -405,12 +414,6 @@ header {
   padding-bottom: 30px;
 }
 
-.members {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .members__title {
   width: 270px;
   height: 428px;
@@ -421,7 +424,6 @@ header {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .members .members__title:not(:last-child) {
   margin-right: 30px;
 }
@@ -466,9 +468,7 @@ header {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.network__link:hover,
-.network__link:focus {
+.network__link:hover, .network__link:focus {
   background-color: var(--accent-blue-color);
   color: var(--white-color);
 }
@@ -519,9 +519,7 @@ header {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.customers__link:hover,
-.customers__link:focus {
+.customers__link:hover, .customers__link:focus {
   color: var(--accent-blue-color);
   border-color: var(--accent-blue-color);
 }
@@ -579,9 +577,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-contact__adress:hover,
-.footer-contact__adress:focus {
+.footer-contact__adress:hover, .footer-contact__adress:focus {
   color: var(--accent-blue-color);
 }
 
@@ -597,9 +593,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-contact__email:hover,
-.footer-contact__email:focus {
+.footer-contact__email:hover, .footer-contact__email:focus {
   color: var(--accent-blue-color);
 }
 
@@ -615,9 +609,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-contact__tel:hover,
-.footer-contact__tel:focus {
+.footer-contact__tel:hover, .footer-contact__tel:focus {
   color: var(--accent-blue-color);
 }
 
@@ -675,9 +667,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-net__link:hover,
-.footer-net__link:focus {
+.footer-net__link:hover, .footer-net__link:focus {
   background-color: var(--accent-blue-color);
 }
 
@@ -716,35 +706,30 @@ address {
   color: var(--white-color);
   outline: none;
 }
-
 .subscribe__input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscribe__input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscribe__input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscribe__input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .subscribe__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
@@ -791,12 +776,6 @@ address {
   background: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 400ms, visibility 400ms;
   transition: opacity 400ms, visibility 400ms;
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .modal {
@@ -942,7 +921,6 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal__coment::-webkit-input-placeholder {
   font-style: normal;
   font-weight: 400;
@@ -951,7 +929,6 @@ address {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__coment::-moz-placeholder {
   font-style: normal;
   font-weight: 400;
@@ -960,7 +937,6 @@ address {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__coment:-ms-input-placeholder {
   font-style: normal;
   font-weight: 400;
@@ -969,7 +945,6 @@ address {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__coment::-ms-input-placeholder {
   font-style: normal;
   font-weight: 400;
@@ -978,7 +953,6 @@ address {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal__coment::placeholder {
   font-style: normal;
   font-weight: 400;
@@ -1090,7 +1064,6 @@ address {
   overflow: hidden;
 }
 
-/* ---visually hidden - приховуємо елемент--- */
 .progects__btn {
   font-weight: 500;
   font-size: 16px;
@@ -1112,9 +1085,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.progects__btn:hover,
-.progects__btn:focus {
+.progects__btn:hover, .progects__btn:focus {
   background-color: var(--accent-blue-color);
   color: var(--white-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1153,13 +1124,11 @@ address {
   /* Формула для вирахування 
   рівномірного зазору між картками */
 }
-
 .card:nth-child(3n) {
   margin-right: 0;
   /* Формула: кожному третьому
   чайлду правий маржин 0 */
 }
-
 .card:nth-child(n+6) {
   margin-bottom: 0;
   /* прибрали всім елементам після шостого MB */
@@ -1176,9 +1145,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.card a:hover,
-.card a:focus {
+.card__link:hover, .card__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
@@ -1188,12 +1155,6 @@ address {
 .card__block {
   position: relative;
   overflow-y: hidden;
-}
-
-.card__link:hover .card__overlay,
-.card__link:focus .card__overlay {
-  -webkit-transform: translate(0);
-          transform: translate(0);
 }
 
 .card__overlay {
@@ -1213,6 +1174,10 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card__link:hover .card__overlay, .card__link:focus .card__overlay {
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .card__three-sides-border {
