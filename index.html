@@ -22,8 +22,24 @@
     <!--------------------HEADER------------------->
     <header>
         <div class="header container">
-            <!--------------------LOGO-------------------->
-            <a href="./index.html" lang="en" class="logo">Web<span class="logo__color">Studio</span></a>
+    <!--------------------LOGO-------------------->
+    <a href="./index.html" lang="en" class="logo">Web<span class="logo__color">Studio</span></a>
+      <!------------------MENU BUTTON------------------->
+    <button type="button" class="menu-button"
+    data-menu-button>
+    <svg 
+    width="40px" 
+    height="40px" 
+    aria-label="Переключатель мобильного меню"
+    aria-expanded="false">
+        <use class="menu-button__icon-open" href="./images/imgs/sprite.svg#icon-menu_open"></use>
+        <use class="menu-button__icon-close" href="./images/imgs/sprite.svg#icon-menu_close"></use>
+    </svg>
+    </button>
+    <!--------------------MENU--------------------->
+    <div class="menu" data-menu>
+
+    </div>
             <!-------------------SITE NAV --------------------->
             <nav>
                 <ul class="nav">
@@ -418,7 +434,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
-
 </html>

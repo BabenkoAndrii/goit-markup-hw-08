@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    position: relative;
     align-items: center;
 }
 
@@ -7,19 +8,81 @@ header {
     border-bottom: 1px solid #ECECEC;
 }
 .logo {
+    
     font-family: 'Raleway', sans-serif;
-    margin-right: 93px;
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-blue-color);
     text-decoration: none;
+    @media screen and (max-width: 768px) {
+    margin: 16px 0px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-right: auto;
+    } 
+    @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    }
 }
 
 .logo__color {
     color: #000000;
 }
+/* ------------------MENU BUTTON---------------------*/ 
+.menu-button {
+    display: inline-flex;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    background-color: #FFFFFF;
+    & .menu-button__icon-close {
+        display: none;
+    }
+
+    &.is-open .menu-button__icon-close {
+        display: block;
+    }
+
+    &.is-open .menu-button__icon-open {
+        display: none;
+    }
+
+    &:hover .menu-button__icon-open,
+    &:focus .menu-button__icon-open {
+    fill: var(--accent-blue-color);
+    cursor: pointer;
+    }
+
+    &:hover .menu-button__icon-close,
+    &:focus .menu-button__icon-close {
+    fill: var(--accent-blue-color);
+    cursor: pointer;
+    }
+}
+// ----------------MENU---------------------
+.menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
+    0px 2px 4px rgba(0, 0, 0, 0.08), 
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+    &.is-open {
+    display: block;
+    }
+}
+
+
+
+
+
+
 
 /* -------------------SITE NAV --------------------- */
 .nav {
@@ -29,6 +92,9 @@ header {
         color: var(--accent-blue-color);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         } 
+    @media screen and (max-width: 768px) {
+    display: none;
+    }
 }
 
 .nav a {
@@ -69,20 +135,25 @@ header {
 /* -----------------CONTACTS------------------- */
 
 .contacts {
-    margin-left: auto;
+    margin-left: auto;    
     display: flex;
     &__link:hover,
     &__link:focus {
-        color: var(--accent-blue-color);
-        border: -1px solid #000000;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
+    color: var(--accent-blue-color);
+    border: -1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    @media screen and (max-width: 768px) {
+    display: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    margin-left: auto;
+    }
 }
 .contacts a {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
     color: var(--content-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -91,10 +162,19 @@ header {
     transition-property: color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+        }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-top: 10px;
+    }
 }
 
+@media screen and (min-width: 1200px) {
 .contacts .contacts__mail+.contacts__phone {
     margin-left: 50px;
+}
 }
 
 .contacts__icon {
