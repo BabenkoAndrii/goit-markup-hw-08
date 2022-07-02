@@ -301,21 +301,36 @@ section {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo-net-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 60px;
   }
 }
-.logo-contact {
-  text-align: center;
-  margin-bottom: 60px;
+
+@media screen and (max-width: 768px) {
+  .logo-contact {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-contact {
+    margin-right: 70px;
+  }
 }
 
 .logo-footer {
@@ -393,8 +408,10 @@ address {
 }
 
 /* -----FOOTER NETWORK ПРИСОЕДИНЯЙТЕСЬ---------- */
-.footer-net {
-  text-align: center;
+@media screen and (max-width: 1200px) {
+  .footer-net {
+    text-align: center;
+  }
 }
 
 .footer-net__title {
@@ -414,10 +431,14 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .footer-net__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-net__item:not(:last-child) {
@@ -457,9 +478,25 @@ address {
 }
 
 /* -------FOOTER Subscribe подписка----------*/
-.subscribe {
-  text-align: center;
+@media screen and (max-width: 1200px) {
+  .subscribe {
+    text-align: center;
+  }
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input-and-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .subscribe__label {
   display: block;
   font-style: normal;
@@ -470,8 +507,12 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  text-align: center;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .subscribe__label {
+    text-align: center;
+  }
 }
 
 .subscribe__input {
@@ -536,6 +577,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 10px 28px;
+  height: 50px;
   background: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
