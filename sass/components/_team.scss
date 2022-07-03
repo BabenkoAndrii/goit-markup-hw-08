@@ -4,10 +4,7 @@
 }
 
 .team__title {
-    @media screen and (min-width: 768px) {
-    width: calc(100% / 2 - 30px); }
     margin-bottom: 50px;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -16,14 +13,33 @@
 }
 
 .members {
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 }
+
+.members__title {
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    @media screen and (max-width: 768px) {
+    .members &:not(:last-child) {
+            margin-bottom: 30px; }
+    }
+    // @media screen and (min-width: 768px) {
+
+    // }
+    // @media screen and (min-width: 1200px) {
+        
+    // }
+
+    
+} 
+
 .members__name {
-    font-weight: 500;
     font-size: 16px;
     text-align: center;
     line-height: 1.19;
@@ -44,18 +60,7 @@
     padding-bottom: 30px;
 }
 
-.members__title {
-    height: 428px;
-    left: 515px;
-    top: 1785px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
 
-    // .members &:not(:last-child) {
-    //     margin-right: 30px;
-    // }
-}
 
 /* ---------------Team's SVG----------- */
 .network {
