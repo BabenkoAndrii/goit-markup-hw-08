@@ -1,12 +1,11 @@
 .header {
     display: flex;
     position: relative;
-    align-items: baseline;
+    align-items: center;
     @media screen and (min-width: 768px) {
     padding-top: 21px;
     padding-bottom: 21px;
-    }
-    
+    }    
 }
 
 header {
@@ -88,6 +87,7 @@ header {
         }
     @media screen and (min-width: 768px) {
         display: flex;
+        align-items: center;
     }
 }
 
@@ -150,17 +150,14 @@ header {
         top: 33px;
         /* ПІДКРЕСЛЮВАННЯ НАЗВИ ПОТОЧНОЇ АКТИВНОЇ СТОРІНКИ */
         }
+    @media screen and (min-width: 1200px) {
+        top: 28px;
     }
-
-
+    }
 
 /* -----------------CONTACTS------------------- */
 // .contacts-and-social {
-//     display: flex;
-    
-    
-//     justify-content: space-between;
-//     border: none;
+
 // }
 .contacts {
     &__link:hover,
@@ -219,6 +216,19 @@ header {
         letter-spacing: 0.02em;
     }
 }
+
+
+    .contacts__phone {
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin-bottom: 10px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-right: 10px;
+        }
+
+    }
+
+
 
 .contacts__icon {
     fill: currentColor;
