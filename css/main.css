@@ -238,6 +238,7 @@ header {
 
 .nav a {
   color: var(--title-text-color);
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
@@ -343,6 +344,7 @@ header {
     font-size: 34px;
     line-height: 0.85;
     letter-spacing: 0.02em;
+    color: #2196F3;
   }
 
   .contacts__mail {
@@ -405,12 +407,12 @@ header {
 .effect {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 600px;
-  max-width: 1600px;
+  max-width: 480px;
+  height: 400px;
   left: 0px;
   top: 80px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-color: #C4C4C4;
@@ -420,15 +422,63 @@ header {
   background-size: cover;
   background-position: center;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .effect {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(48, 48, 58, 0.4)), to(rgba(48, 48, 58, 0.4))), url("../images/effective-imgs/header-img-mob-x2.jpg");
+    background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)), url("../images/effective-imgs/header-img-mob-x2.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .effect {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/effective-imgs/header-img-tab-x1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/effective-imgs/header-img-tab-x1.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .effect {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(48, 48, 58, 0.4)), to(rgba(48, 48, 58, 0.4))), url("../images/effective-imgs/header-img-tab-x2.jpg");
+    background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)), url("../images/effective-imgs/header-img-tab-x2.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .effect {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/effective-imgs/header-img-desk-x1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/effective-imgs/header-img-desk-x1.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .effect {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(48, 48, 58, 0.4)), to(rgba(48, 48, 58, 0.4))), url("../images/effective-imgs/header-img-desk-x2.jpg");
+    background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)), url("../images/effective-imgs/header-img-desk-x2.jpg");
+  }
+}
 
 .effect__title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+  height: 84px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+}
+@media screen and (min-width: 1200px) {
+  .effect__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    height: 120px;
+  }
 }
 
 .effect__button {

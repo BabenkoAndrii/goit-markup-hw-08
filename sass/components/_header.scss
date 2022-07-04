@@ -109,6 +109,7 @@ header {
 
 .nav a {
     color: var(--title-text-color);
+    font-weight: 500;
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
@@ -156,9 +157,7 @@ header {
     }
 
 /* -----------------CONTACTS------------------- */
-// .contacts-and-social {
 
-// }
 .contacts {
     &__link:hover,
     &__link:focus {
@@ -194,21 +193,15 @@ header {
     transition-property: color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-    // @media screen and (min-width: 768px) and (max-width: 1200px) {
-    
-    // }
-    // @media screen and (min-width: 1200px) {
-    
-    // }
-}
 
+}
 
 @media screen and (max-width: 768px) {
     .contacts__phone {
         font-size: 34px;
         line-height: 0.85;
         letter-spacing: 0.02em;
+        color: #2196F3;
     }
     .contacts__mail {
         font-size: 24px;
@@ -216,7 +209,6 @@ header {
         letter-spacing: 0.02em;
     }
 }
-
 
     .contacts__phone {
         @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -227,7 +219,6 @@ header {
         }
 
     }
-
 
 
 .contacts__icon {
