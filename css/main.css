@@ -61,6 +61,13 @@ li {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
 section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -407,8 +414,8 @@ header {
   margin-left: auto;
   margin-right: auto;
   background-color: #C4C4C4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/imgs/overlay.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/imgs/overlay.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/effective-imgs/header-img-mob-x1.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/effective-imgs/header-img-mob-x1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
