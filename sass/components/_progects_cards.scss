@@ -8,9 +8,8 @@
 }
 
 .card {
-    width: 100%;
     @media screen and (max-width: 768px) {
-            .members &:not(:last-child) {
+            &:not(:last-child) {
                 margin-bottom: 30px;
             }
         }
@@ -79,6 +78,7 @@
     border-left: 1px solid #ECECEC;
     /* рамка з трьох сторін */
     padding: 20px 24px;
+    
 }
 
 .card__title {

@@ -1241,12 +1241,11 @@ address {
 }
 
 .card {
-  width: 100%;
   /* Формула для АВТОвирахування 
   рівномірного простору для карток */
 }
 @media screen and (max-width: 768px) {
-  .members .card:not(:last-child) {
+  .card:not(:last-child) {
     margin-bottom: 30px;
   }
 }
