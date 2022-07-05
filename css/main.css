@@ -152,7 +152,7 @@ header {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 10px;
   right: 0;
@@ -169,6 +169,9 @@ header {
 }
 .menu-button.is-open .menu-button__icon-close {
   display: block;
+}
+.menu-button.is-open {
+  position: fixed;
 }
 .menu-button.is-open .menu-button__icon-open {
   display: none;
@@ -204,6 +207,7 @@ header {
     display: -ms-flexbox;
     display: flex;
     position: fixed;
+    height: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -409,12 +413,10 @@ header {
           box-sizing: border-box;
   max-width: 480px;
   height: 400px;
-  left: 0px;
-  top: 80px;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   background-color: #C4C4C4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/effective-imgs/header-img-mob-x1.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/effective-imgs/header-img-mob-x1.jpg");

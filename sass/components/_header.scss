@@ -35,7 +35,7 @@ header {
 /* ------------------MENU BUTTON---------------------*/ 
 .menu-button {
     display: inline-flex;
-    position:fixed;
+    position: absolute;
     z-index: 1;
     top: 10px;
     right: 0;
@@ -50,6 +50,10 @@ header {
 
     &.is-open .menu-button__icon-close {
         display: block;
+    }
+
+    &.is-open {
+    position: fixed;
     }
 
     &.is-open .menu-button__icon-open {
@@ -83,6 +87,7 @@ header {
     &.is-open {
     display: flex;
     position: fixed;
+    height: 100%;
     }
         }
     @media screen and (min-width: 768px) {
