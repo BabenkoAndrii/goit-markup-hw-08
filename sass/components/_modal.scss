@@ -12,12 +12,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+    @media screen and (min-width: 768px) {
+    width: 528px;
+    min-height: 581px;
+    }
 }
 
 .modal__close {
@@ -175,18 +179,22 @@
     margin-right: 8px;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
+    border-radius: 2px;
 
 }
 
 .modal__checkpoint-label {
     display: flex;
     flex-wrap: wrap;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
     align-items: center;
+    @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
+    }
 
 }
 
