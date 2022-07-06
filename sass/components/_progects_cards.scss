@@ -27,7 +27,9 @@
 }
 
 .card__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -72,7 +74,7 @@
     border-left: 1px solid #ECECEC;
     /* рамка з трьох сторін */
     padding: 20px 24px;
-    
+    flex-grow: 1;
 }
 
 .card__title {
