@@ -1387,7 +1387,7 @@ address {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--accent-blue-color);
-  background-image: url(../images/vector.svg);
+  background-image: url(../images/imgs/vector.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -1430,6 +1430,7 @@ address {
   color: var(--accent-blue-color);
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  margin-left: 2px;
 }
 
 .modal__submit-btn {
