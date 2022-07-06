@@ -3,22 +3,27 @@
     width: 100%;
     height: 100%;
     top: 0;
+    padding-top: 93px;
+    
     background: rgba(0, 0, 0, 0.2);
     transition: opacity 400ms, visibility 400ms;
 }
 
 .modal {
+    position: relative;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+    @media screen and (min-width: 1200px) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
-    min-height: 609px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 40px;
-    @media screen and (min-width: 768px) {
     width: 528px;
     min-height: 581px;
     }
@@ -26,7 +31,7 @@
 
 .modal__close {
     display: flex;
-    position: fixed;
+    position: absolute;
     align-items: center;
     justify-content: center;
     top: 8px;
@@ -100,6 +105,7 @@
 
 .modal__lable {
     display: block;
+    margin-top: 10px;
     margin-bottom: 4px;
     font-style: normal;
     font-weight: 400;
@@ -110,6 +116,7 @@
 }
 
 .modal__coment-label {
+    margin-top: 10px;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -145,8 +152,8 @@
 
 .modal__checkpoint-fieldset {
     border: none;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
 .modal__legend {
@@ -164,7 +171,8 @@
 
 .modal__checkpoint:checked+.modal__checkpoint-label::before {
     background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--accent-blue-color);
     background-image: url(../images/vector.svg);
     background-repeat: no-repeat;
@@ -185,17 +193,16 @@
 
 .modal__checkpoint-label {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
-    align-items: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
     }
-
 }
 
 .modal__checkpoint-label-link {
@@ -205,8 +212,8 @@
 
 .modal__submit-btn {
     display: block;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     height: 50px;
     background: #188CE8;
