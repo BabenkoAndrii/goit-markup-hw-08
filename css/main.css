@@ -527,6 +527,9 @@ header {
   }
 }
 
+.principle__list {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .principle__list:not(:last-child) {
     margin-bottom: 30px;
@@ -544,7 +547,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .principle__list {
-    width: calc(50% - 30px);
+    width: calc((100% - 30px) / 2);
   }
   .principle__list:nth-child(n+3) {
     margin-bottom: 0;
@@ -552,7 +555,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .principle__list {
-    width: calc(25% - 30px);
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -795,16 +798,21 @@ header {
 }
 
 .customers__item {
-  width: calc(50% - 30px);
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .customers__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 768px) {
   .customers__item {
-    width: calc(33.3333333333% - 30px);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .customers__item {
-    width: calc(16.6666666667% - 30px);
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -852,15 +860,18 @@ header {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .footer__logo-net-box {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer__logo-net-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 60px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -980,7 +991,6 @@ address {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1028,7 +1038,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    margin-left: 93px;
+    padding-left: 93px;
   }
 }
 
@@ -1387,7 +1397,7 @@ address {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--accent-blue-color);
-  background-image: url(../images/imgs/vector.svg);
+  background-image: url(../images/vector.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
